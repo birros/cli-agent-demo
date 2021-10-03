@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if [ "$1" = "--agent" ]; then
+    PROG_SHELL_TOKEN=`openssl rand -hex 32`
+    echo "alias prog='PROG_SHELL_TOKEN=$PROG_SHELL_TOKEN prog'";
+    exit 0
+fi
+
+echo PROG_SHELL_TOKEN=$PROG_SHELL_TOKEN
+echo args:$@

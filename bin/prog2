@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo PROG_SHELL_TOKEN=$PROG_SHELL_TOKEN
+
+prog lorem_ipsum
