@@ -1,10 +1,11 @@
 #!/bin/sh
 
 if [ "$1" = "--agent" ]; then
-    PROG_SHELL_TOKEN=`openssl rand -hex 32`
-    echo "alias prog='PROG_SHELL_TOKEN=$PROG_SHELL_TOKEN prog'";
+    # https://owasp.org/www-community/vulnerabilities/Insufficient_Session-ID_Length
+    PROG_SESSION_ID=`openssl rand -hex 32`
+    echo "alias prog='PROG_SESSION_ID=$PROG_SESSION_ID prog'";
     exit 0
 fi
 
-echo PROG_SHELL_TOKEN=$PROG_SHELL_TOKEN
+echo PROG_SESSION_ID=$PROG_SESSION_ID
 echo args:$@

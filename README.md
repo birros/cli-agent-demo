@@ -19,17 +19,17 @@ $ PATH="$PWD/bin:$PATH"
 $ eval $(prog --agent) # set it in shell rc (eg .bashrc) as for ssh-agent
 
 $ prog lorem_ipsum
-PROG_SHELL_TOKEN=092927209144713d9dc0e0e316cd665f1668b59f63003e99b4482f92c7bd1a83
+PROG_SESSION_ID=092927209144713d9dc0e0e...cd665f1668b59f63003e99b4482f92c7bd1a83
 args:lorem_ipsum
 
 $ prog2 lorem_ipsum
-PROG_SHELL_TOKEN=
-PROG_SHELL_TOKEN=
+PROG_SESSION_ID=
+PROG_SESSION_ID=
 args:lorem_ipsum
 
 $ unalias prog
 
 $ prog lorem_ipsum
-PROG_SHELL_TOKEN=
+PROG_SESSION_ID=
 args:lorem_ipsum
 ```

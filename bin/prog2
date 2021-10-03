@@ -1,5 +1,5 @@
 #!/bin/sh
 
-echo PROG_SHELL_TOKEN=$PROG_SHELL_TOKEN
+echo PROG_SESSION_ID=$PROG_SESSION_ID
 
 prog lorem_ipsum
