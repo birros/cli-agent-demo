@@ -1,5 +1,7 @@
 # cli-agent-demo
 
+See [birros/go-kvdb-enc-demo](https://github.com/birros/go-kvdb-enc-demo).
+
 This repo shows how to create and keep a token during a shell session that it is
 only accessible to a given program. Useful to create a cli program asking to
 enter a password and avoid to be asked every time. As it is the case for `ssh`
